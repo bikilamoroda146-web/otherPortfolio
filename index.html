@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bikila | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<header>
+  <nav>
+    <h2 class="logo">Biko<span>Dev</span></h2>
+
+    <ul id="menu">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <i class="fas fa-moon" onclick="toggleTheme()" id="themeIcon"></i>
+      <i class="fas fa-bars" onclick="toggleMenu()"></i>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="reveal">
+  <div class="hero-container">
+
+    <!-- PHOTO -->
+    <div class="hero-img">
+      <img src="images/A.jpg" alt="My Photo">
+    </div> <br>
+
+    <!-- TEXT -->
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Bikila Moroda</span></h1>
+      <h2 id="typed-text"></h2>
+      <p>Frontend Developer | React | JavaScript</p>
+
+   <div class="buttons">
+  <a href="#portfolio" class="btn btn-primary">View Projects</a>
+  <a href="#contact" class="btn btn-secondary">Hire Me</a>
+</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="reveal">
+  <h2>About Me</h2>
+  <p>
+   I am Bikila Moroda, a passionate and self-driven Frontend Developer from Ethiopia. I specialize in building modern, responsive, and user-friendly web applications using HTML, CSS, JavaScript, and React.
+
+I am currently studying Computer Science at university and continuously improving my skills in web development and software engineering. I enjoy turning ideas into real, functional websites with clean and efficient code.
+
+My main focus is frontend development, but I am also learning backend technologies such as Node.js and databases to become a full-stack developer in the future.
+
+I love solving problems, learning new technologies, and building real-world projects that improve user experience. My goal is to grow as a professional developer and contribute to impactful software products
+  </p>
+
+  <div class="skills">
+    <i class="fa-brands fa-html5"></i>
+    <i class="fa-brands fa-css3-alt"></i>
+    <i class="fa-brands fa-js"></i>
+    <i class="fa-brands fa-react"></i>
+    <i class="fa-brands fa-github"></i>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="reveal">
+  <h2>Services</h2>
+
+  <div class="cards">
+    <div class="card">
+      <i class="fas fa-code"></i>
+      <h3>Web Design</h3>
+      <p>Modern UI/UX design for websites.</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-laptop-code"></i>
+      <h3>Development</h3>
+      <p>Responsive websites using modern tools.</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>Mobile Friendly</h3>
+      <p>All devices optimized design.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="reveal">
+  <h2>My Projects</h2>
+
+  <div class="projects">
+    <div class="project">
+      <h3>E-Commerce App</h3>
+      <p>React + Firebase shopping app.</p>
+    </div>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>Personal portfolio using HTML, CSS, JS.</p>
+    </div>
+
+    <div class="project">
+      <h3>Todo App</h3>
+      <p>Task manager with local storage.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+  <h2>Contact Me</h2>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message"></textarea>
+    <button class="btn">Send</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="reveal">
+  <div class="footer-container">
+
+    <div class="footer-box">
+      <h3>Bikila Moroda</h3>
+      <p>Frontend Developer passionate about building modern web applications.</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p>📩  Email: bikilamoroda146@gmail.com</p>
+      <p>📞  Phone: 0928214042</p>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-github"></i>Github</a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+        <a href="#"><i class="fa-brands fa-telegram"></i>Telegram</a>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="copyright">
+    © 2026 Bikila Moroda | All Rights Reserved
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
