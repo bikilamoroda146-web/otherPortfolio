@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bikila | Portfolio</title>
+  <title>BikoDev Portfolio</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+
+<!-- PROGRESS BAR -->
+<div id="progress-bar"></div>
 
 <!-- NAV -->
 <header>
@@ -35,21 +39,19 @@
 <section id="hero" class="reveal">
   <div class="hero-container">
 
-    <!-- PHOTO -->
     <div class="hero-img">
       <img src="images/A.jpg" alt="My Photo">
-    </div> <br>
+    </div>
 
-    <!-- TEXT -->
     <div class="hero-text">
       <h1>Hi, I'm <span>Bikila Moroda</span></h1>
       <h2 id="typed-text"></h2>
       <p>Frontend Developer | React | JavaScript</p>
 
-   <div class="buttons">
-  <a href="#portfolio" class="btn btn-primary">View Projects</a>
-  <a href="#contact" class="btn btn-secondary">Hire Me</a>
-</div>
+      <div class="buttons">
+        <a href="#portfolio" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Hire Me</a>
+      </div>
     </div>
 
   </div>
@@ -59,13 +61,7 @@
 <section id="about" class="reveal">
   <h2>About Me</h2>
   <p>
-   I am Bikila Moroda, a passionate and self-driven Frontend Developer from Ethiopia. I specialize in building modern, responsive, and user-friendly web applications using HTML, CSS, JavaScript, and React.
-
-I am currently studying Computer Science at university and continuously improving my skills in web development and software engineering. I enjoy turning ideas into real, functional websites with clean and efficient code.
-
-My main focus is frontend development, but I am also learning backend technologies such as Node.js and databases to become a full-stack developer in the future.
-
-I love solving problems, learning new technologies, and building real-world projects that improve user experience. My goal is to grow as a professional developer and contribute to impactful software products
+    I am Bikila Moroda, a passionate Frontend Developer from Ethiopia...
   </p>
 
   <div class="skills">
@@ -128,50 +124,28 @@ I love solving problems, learning new technologies, and building real-world proj
 <section id="contact" class="reveal">
   <h2>Contact Me</h2>
 
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Message"></textarea>
-    <button class="btn">Send</button>
+  <form id="contact-form">
+    <input type="text" name="user_name" placeholder="Your Name" required>
+    <input type="email" name="user_email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Message" required></textarea>
+<button type="submit" class="btn" id="sendBtn">Send Message</button>
   </form>
 </section>
-
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h2>✅ Message Sent!</h2>
+    <p>Thank you for contacting me.</p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
 <!-- FOOTER -->
 <footer class="reveal">
-  <div class="footer-container">
-
-    <div class="footer-box">
-      <h3>Bikila Moroda</h3>
-      <p>Frontend Developer passionate about building modern web applications.</p>
-    </div>
-
-    <div class="footer-box">
-      <h3>Quick Links</h3>
-      <a href="#hero">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </div>
-
-    <div class="footer-box">
-      <h3>Contact</h3>
-      <p>📩  Email: bikilamoroda146@gmail.com</p>
-      <p>📞  Phone: 0928214042</p>
-      <div class="socials">
-        <a href="#"><i class="fa-brands fa-github"></i>Github</a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
-        <a href="#"><i class="fa-brands fa-telegram"></i>Telegram</a>
-      </div>
-    </div>
-
-  </div>
-
-  <p class="copyright">
-    © 2026 Bikila Moroda | All Rights Reserved
-  </p>
+  <p>© 2026 Bikila Moroda | All Rights Reserved</p>
 </footer>
 
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
