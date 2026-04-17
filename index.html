@@ -9,17 +9,11 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
-
-<!-- PROGRESS BAR -->
 <div id="progress-bar"></div>
-
-<!-- NAV -->
 <header>
   <nav>
     <h2 class="logo">Biko<span>Dev</span></h2>
-
     <ul id="menu">
       <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -27,69 +21,72 @@
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-
     <div class="nav-icons">
       <i class="fas fa-moon" onclick="toggleTheme()" id="themeIcon"></i>
       <i class="fas fa-bars" onclick="toggleMenu()"></i>
     </div>
   </nav>
 </header>
-
-<!-- HERO -->
-<section id="hero" class="reveal">
+<section id="hero" >
   <div class="hero-container">
-
     <div class="hero-img">
       <img src="images/A.jpg" alt="My Photo">
     </div>
-
     <div class="hero-text">
       <h1>Hi, I'm <span>Bikila Moroda</span></h1>
       <h2 id="typed-text"></h2>
       <p>Frontend Developer | React | JavaScript</p>
-
       <div class="buttons">
         <a href="#portfolio" class="btn btn-primary">View Projects</a>
         <a href="#contact" class="btn btn-secondary">Hire Me</a>
       </div>
     </div>
-
   </div>
 </section>
-
-<!-- ABOUT -->
-<section id="about" class="reveal">
+  <section id="about">
   <h2>About Me</h2>
-  <p>
-    I am Bikila Moroda, a passionate Frontend Developer from Ethiopia...
-  </p>
-
-  <div class="skills">
-    <i class="fa-brands fa-html5"></i>
-    <i class="fa-brands fa-css3-alt"></i>
-    <i class="fa-brands fa-js"></i>
-    <i class="fa-brands fa-react"></i>
-    <i class="fa-brands fa-github"></i>
+  <div class="about-box">
+    <p>
+      I am <strong>Bikila Moroda</strong>, a passionate and self-driven Frontend Developer based in Ethiopia.
+      I specialize in building modern, responsive, and user-friendly web applications using
+      <strong>HTML, CSS, JavaScript, and React</strong>.
+    </p>
+    <p>
+      Currently, I am studying Computer Science at Ambo university, where I am continuously improving my skills
+      in software development, problem-solving, and system design.
+    </p>
+    <p>
+      My focus is on creating clean, efficient, and scalable user interfaces. I also enjoy learning backend
+      technologies such as Node.js and databases to grow into a full-stack developer.
+    </p>
+    <p>
+      I love building real-world projects, exploring new technologies, and improving user experience through
+      modern web design principles. My goal is to become a professional software engineer and contribute to
+      impactful digital solutions.
+    </p>
   </div>
+ <div class="skills">
+  <i class="fa-brands fa-html5 html"></i>
+  <i class="fa-brands fa-css3-alt css"></i>
+  <i class="fa-brands fa-js js"></i>
+  <i class="fa-brands fa-react react"></i>
+  <i class="fa-brands fa-github github"></i>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="tailwind" alt="Tailwind">
+</div>
 </section>
-
-<!-- SERVICES -->
-<section id="services" class="reveal">
+<section id="services" >
   <h2>Services</h2>
-
   <div class="cards">
     <div class="card">
       <i class="fas fa-code"></i>
       <h3>Web Design</h3>
       <p>Modern UI/UX design for websites.</p>
     </div>
-
     <div class="card">
       <i class="fas fa-laptop-code"></i>
       <h3>Development</h3>
       <p>Responsive websites using modern tools.</p>
     </div>
-
     <div class="card">
       <i class="fas fa-mobile-alt"></i>
       <h3>Mobile Friendly</h3>
@@ -97,33 +94,43 @@
     </div>
   </div>
 </section>
-
-<!-- PORTFOLIO -->
-<section id="portfolio" class="reveal">
+<section id="portfolio" >
   <h2>My Projects</h2>
-
-  <div class="projects">
-    <div class="project">
-      <h3>E-Commerce App</h3>
-      <p>React + Firebase shopping app.</p>
-    </div>
-
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>Personal portfolio using HTML, CSS, JS.</p>
-    </div>
-
-    <div class="project">
-      <h3>Todo App</h3>
-      <p>Task manager with local storage.</p>
-    </div>
+ <div class="projects">    
+<div class="project">
+  <h3>Image Gallery</h3>
+  <p>
+    Modern image gallery with lightbox view, next/previous navigation, 
+    and smooth animations. Fully responsive design.
+  </p>
+  <div class="project-links">
+    <a href="https://your-gallery.netlify.app" target="_blank" class="btn btn-primary">Live Demo</a>
+    <a href="https://github.com/yourusername/image-gallery" target="_blank" class="btn btn-secondary">GitHub</a>
+  </div>
+</div>
+<div class="project">
+  <h3>Music Player App</h3>
+  <p>Modern music player with play, pause, next, and playlist features.</p>
+  <div class="project-links">
+    <a href="https://your-live-link.com" target="_blank" class="btn btn-primary">Live Demo</a>
+    <a href="https://github.com/yourusername/project" target="_blank" class="btn btn-secondary">GitHub</a>
+  </div>
+</div>
+<div class="project">
+  <h3>Calculator App</h3>
+  <p>
+    A responsive calculator built using HTML, CSS, and JavaScript. 
+    Supports all basic arithmetic operations with real-time results.
+  </p>
+  <div class="project-links">
+    <a href="https://bikilamoroda146-web.github.io/CodeAlpha_Calculator/" target="_blank" class="btn btn-primary">Live Demo</a>
+    <a href="https://github.com/bikilamoroda146-web/CodeAlpha_Calculator.git" target="_blank" class="btn btn-secondary">GitHub</a>
+  </div>
+</div>
   </div>
 </section>
-
-<!-- CONTACT -->
-<section id="contact" class="reveal">
+<section id="contact" >
   <h2>Contact Me</h2>
-
   <form id="contact-form">
     <input type="text" name="user_name" placeholder="Your Name" required>
     <input type="email" name="user_email" placeholder="Your Email" required>
@@ -138,14 +145,45 @@
     <button onclick="closePopup()">OK</button>
   </div>
 </div>
-<!-- FOOTER -->
-<footer class="reveal">
-  <p>© 2026 Bikila Moroda | All Rights Reserved</p>
+<footer>
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>BikoDev</h3>
+      <p>
+        A passionate Frontend Developer focused on building modern, responsive,
+        and user-friendly web applications.
+      </p>
+    </div>
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-box">
+      <h3>Contact Info</h3>
+      <p>📧 bikilamoroda146@gmail.com</p>
+      <p>📞 0928214042</p>
+      <div class="socials">
+        <a href="https://github.com/bikilamoroda146-web" target="_blank">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://t.me/" target="_blank">
+          <i class="fa-brands fa-telegram"></i> Telegram
+        </a>
+      </div>
+    </div>
+  </div>
+  <p class="copyright">
+    © 2026 BikoDev | All Rights Reserved
+  </p>
 </footer>
-
-<!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>
